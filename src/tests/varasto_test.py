@@ -33,15 +33,15 @@ class TestVarasto(unittest.TestCase):
         self.assertEqual(testivarasto.saldo, 5)
 
     def test_liian_suuri_nosto(self):
-            testivarasto = Varasto(10,5)
-            testivarasto.ota_varastosta(10)
-            self.assertEqual(testivarasto.saldo, 0)
+        testivarasto = Varasto(10,5)
+        testivarasto.ota_varastosta(10)
+        self.assertEqual(testivarasto.saldo, 0)
 
     def test_to_string(self):
-            testivarasto = Varasto(15,10)
-            self.assertEqual(str(testivarasto), "saldo = 10, vielä tilaa 5")
+        testivarasto = Varasto(15,10)
+        self.assertEqual(str(testivarasto), "saldo = 10, vielä tilaa 5")
 
-            #"saldo = 10.0, vielä tilaa 5.0"
+        #"saldo = 10.0, vielä tilaa 5.0"
 
 
     ## Alkuperäiset testit
