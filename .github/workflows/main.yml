@@ -28,7 +28,6 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-          - name: Analysing the code with pylint
       - name: Analysing the code with pylint
         run: |
           pylint $(git ls-files '*.py')
